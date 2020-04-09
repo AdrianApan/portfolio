@@ -2,7 +2,7 @@
 
 Personal portfolio website - built with React, JavaScript, Semantic UI, Node and Express.
 
-![alt text](https://i.imgur.com/vxvwG8p.png)
+![alt text](https://i.imgur.com/O0a5iHV.png)
 
 ## Installation
 
