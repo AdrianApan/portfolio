@@ -1,0 +1,10 @@
+@import "./_variables.scss";
+
+body {
+	font: 100% $font-stack;
+	margin: 0;
+}
+  
+code {
+	font-family: $code-font-stack;
+}

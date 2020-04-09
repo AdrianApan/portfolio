@@ -1,0 +1,55 @@
+@import "../../styles/_variables.scss";
+
+#projects {
+    .header {
+        display: inline-block;
+        width: 50%;
+
+        a{
+            width: fit-content;
+        }
+    }
+
+    .description {
+        display: inline-block;
+        font-family: $font-stack;
+        color: $light;
+        font-size: 0.6em;
+        font-style: italic;
+        text-align: right;
+        width: 50%;
+        line-height: 14px;
+
+        .tech-item {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 1.8em;
+            vertical-align: bottom;
+
+            .custom-tech-icon {
+                width: 18px;
+            }
+        }
+
+    }
+
+    .item {
+        // border-bottom: 1px dashed $grey;
+        margin-bottom: 20px;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .description,
+        .header {
+            display: block;
+            width: 100%;
+        }
+
+        .description{
+            text-align: left;
+            margin-top: 10px;
+        }
+    }
+}
