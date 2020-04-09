@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "build"
-          target: "/var/www/adrianapan.com/html/build"
+          target: "/var/www/adrianapan.com/html"
