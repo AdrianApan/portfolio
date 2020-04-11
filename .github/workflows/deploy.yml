@@ -14,7 +14,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
-      - name: copy build via ssh
+      - name: Copy build via ssh
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
