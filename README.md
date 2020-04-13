@@ -27,6 +27,7 @@ serve -s build
 - Using Express:
 
 ```
+npm install express
 node server.js
 ```
 
