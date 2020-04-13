@@ -10,7 +10,7 @@ const WelcomeText = styled.p`
 		margin: 40px 0 20px 0;
 		padding: 0;
 		font-size: 24px;
-    line-height: 40px;
+    line-height: 42px;
 	}
 `
 
