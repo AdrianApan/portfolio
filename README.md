@@ -35,4 +35,4 @@ node server.js
 
 ### v0.1.0
 
-* First stable realease
+* First stable release
