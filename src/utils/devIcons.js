@@ -28,6 +28,8 @@ function setDevIcon(name, theme) {
       return <img src="/images/electron.png" alt="Electron" className="custom-tech-icon" />
     case "semantic":
       return <img src="/images/semantic.png" alt="Semantic" className="custom-tech-icon" />
+    case "d3":
+      return <img src="/images/d3.png" alt="D3.js" className="custom-tech-icon" />
     default:
       return name
   }

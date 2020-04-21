@@ -20,9 +20,20 @@ export default [
     tech: [
       "react",
       "javascript",
-      "nodejs",
-      "express",
       "bootstrap",
+      "html5",
+      "css3"
+    ]
+  },
+  {
+    id: 3,
+    name: "Mars weather insight",
+    url: "https://adrianapan.github.io/mars-weather-insight/",
+    tech: [
+      "react",
+      "javascript",
+      "d3",
+      "semantic",
       "html5",
       "css3"
     ]
