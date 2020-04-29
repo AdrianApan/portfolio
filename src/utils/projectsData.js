@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     name: "Censtats",
-    url: "https://censtats.com",
+    url: "https://search.censtats.com",
     tech: [
       "javascript",
       "nodejs",
