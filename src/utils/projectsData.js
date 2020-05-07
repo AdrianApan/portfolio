@@ -15,12 +15,12 @@ export default [
   },
   {
     id: 2,
-    name: "Highlighter Prototype",
-    url: "https://adrianapan.github.io/highlighter-prototype/",
+    name: "NPM dependency graph",
+    url: "https://adrianapan.github.io/npm-dependency-graph",
     tech: [
       "react",
       "javascript",
-      "bootstrap",
+      "semantic",
       "html5",
       "css3"
     ]
@@ -34,6 +34,18 @@ export default [
       "javascript",
       "d3",
       "semantic",
+      "html5",
+      "css3"
+    ]
+  },
+  {
+    id: 4,
+    name: "Highlighter Prototype",
+    url: "https://adrianapan.github.io/highlighter-prototype/",
+    tech: [
+      "react",
+      "javascript",
+      "bootstrap",
       "html5",
       "css3"
     ]
