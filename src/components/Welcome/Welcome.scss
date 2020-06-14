@@ -11,50 +11,56 @@
 
   a {
     transition: opacity 0.15s;
-  }
 
-  a:hover {
-    opacity: 0.75;
-    border-bottom: 1px dashed;
-  }
+    &:hover {
+      opacity: 0.75;
+      border-bottom: 1px dashed;
+    }
 
-  a.link-dark {
-    color: $dark;
-    padding: 0 5px;
-  }
-  a.link-light {
-    color: $light;
-    padding: 0 5px;
-  }
+    &.link-dark {
+      color: $dark;
+      padding: 0 5px;
+    }
+    &.link-light {
+      color: $light;
+      padding: 0 5px;
+    }
 
-  a.projects {
-    background: $primary;
-  }
-  a.github {
-    background: $secondary;
-  }
-  a.linkedin {
-    background: $primary-alt;
-  }
-  a.twitter {
-    background: $secondary-alt;
-  }
-  a.resume {
-    background: $grey;
+    &.projects {
+      background: $primary;
+    }
+
+    &.github {
+      background: $secondary;
+    }
+
+    &.linkedin {
+      background: $primary-alt;
+    }
+
+    &.twitter {
+      background: $secondary-alt;
+    }
+
+    &.resume {
+      background: $grey;
+    }
   }
 
   #projects {
     margin: 30px 0 20px 0;
     font-size: 20px;
 
-    a.project-link {
-      display: block;
-      line-height: 1.75em;
-      border-bottom: none;
-      color: $light;
-      font-family: $font-stack;
-      text-transform: uppercase;
-      font-weight: 400;
+    a {
+      &.project-link {
+        display: block;
+        line-height: 1.75em;
+        border-bottom: none;
+        color: $light;
+        font-family: $font-stack;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
     }
   }
 
@@ -63,18 +69,22 @@
     width: 100%;
     margin-top: 30px;
 
-    .item:after {
-      content: "/";
-      visibility: visible;
-      position: relative;
-      top: -18px;
-      right: -20px;
-      padding: 0 10px 0 15px;
-      color: $primary;
-    }
+    .item {
+      &::after {
+        content: "/";
+        visibility: visible;
+        position: relative;
+        top: -18px;
+        right: -20px;
+        padding: 0 10px 0 15px;
+        color: $primary;
+      }
 
-    .item:last-child:after {
-      visibility: hidden;
+      &:last-child {
+        &::after {
+          visibility: hidden;
+        }
+      }
     }
 
     a {
@@ -101,14 +111,15 @@
       #projects {
         a.project-link {
           color: $dark;
-        }
 
-        a.project-link:hover .item {
-          background-color: $light-accent;
-          opacity: 1;
-        }
-        .item {
-          background-color: $light-variant;
+          .item {
+            background-color: $light-variant;
+
+            &:hover {
+              background-color: $light-accent;
+              opacity: 1;
+            }
+          }
         }
       }
 
@@ -117,10 +128,10 @@
 
         a {
           color: $dark;
-        }
 
-        a:hover {
-          color: $secondary;
+          &:hover {
+            color: $secondary;
+          }
         }
       }
     }
@@ -142,15 +153,15 @@
       #projects {
         a.project-link {
           color: $light;
-        }
 
-        a.project-link:hover .item {
-          background-color: $dark-accent;
-          opacity: 1;
-        }
+          .item {
+            background-color: $dark-variant;
 
-        .item {
-          background-color: $dark-variant;
+            &:hover {
+              background-color: $dark-accent;
+              opacity: 1;
+            }
+          }
         }
       }
 
@@ -159,10 +170,37 @@
 
         a {
           color: $light;
-        }
 
-        a:hover {
-          color: $secondary-alt;
+          &:hover {
+            color: $secondary-alt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-wrapper {
+    &.theme-dark {
+      .welcome {
+        #menu {
+          a {
+            &:hover {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+    &.theme-light {
+      .welcome {
+        #menu {
+          a {
+            &:hover {
+              color: $dark;
+            }
+          }
         }
       }
     }
