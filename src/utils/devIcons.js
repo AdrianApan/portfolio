@@ -17,19 +17,47 @@ function setDevIcon(name, theme) {
       return <i className={`devicon-${name}-plain colored`}></i>
     case "express":
     case "sass":
-      return (theme === "light") ? 
-      <i className={`devicon-${name}-original colored`}></i> :
-      <i className={`devicon-${name}-original`}></i>
+      return theme === "light" ? (
+        <i className={`devicon-${name}-original colored`}></i>
+      ) : (
+        <i className={`devicon-${name}-original`}></i>
+      )
     case "tensorflow":
-      return <img src="/images/tensorflow.png" alt="Tensorflow" className="custom-tech-icon" />
+      return (
+        <img
+          src="/images/tensorflow.png"
+          alt="Tensorflow"
+          className="custom-tech-icon"
+        />
+      )
     case "firebase":
-      return <img src="/images/firebase.png" alt="Firebase" className="custom-tech-icon" />
+      return (
+        <img
+          src="/images/firebase.png"
+          alt="Firebase"
+          className="custom-tech-icon"
+        />
+      )
     case "electron":
-      return <img src="/images/electron.png" alt="Electron" className="custom-tech-icon" />
+      return (
+        <img
+          src="/images/electron.png"
+          alt="Electron"
+          className="custom-tech-icon"
+        />
+      )
     case "semantic":
-      return <img src="/images/semantic.png" alt="Semantic" className="custom-tech-icon" />
+      return (
+        <img
+          src="/images/semantic.png"
+          alt="Semantic"
+          className="custom-tech-icon"
+        />
+      )
     case "d3":
-      return <img src="/images/d3.png" alt="D3.js" className="custom-tech-icon" />
+      return (
+        <img src="/images/d3.png" alt="D3.js" className="custom-tech-icon" />
+      )
     default:
       return name
   }

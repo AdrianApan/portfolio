@@ -6,7 +6,7 @@ const WelcomeText = styled.p`
   font-size: 48px;
   text-align: center;
   line-height: 78px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     margin: 40px 0 20px 0;
     padding: 0;
     font-size: 24px;
@@ -14,4 +14,4 @@ const WelcomeText = styled.p`
   }
 `
 
-export {WelcomeText}
+export { WelcomeText }

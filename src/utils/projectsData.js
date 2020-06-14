@@ -17,37 +17,18 @@ export default [
     id: 2,
     name: "NPM dependency graph",
     url: "https://adrianapan.github.io/npm-dependency-graph",
-    tech: [
-      "react",
-      "javascript",
-      "semantic",
-      "html5",
-      "css3"
-    ]
+    tech: ["react", "javascript", "semantic", "html5", "css3"]
   },
   {
     id: 3,
     name: "Mars weather insight",
     url: "https://adrianapan.github.io/mars-weather-insight/",
-    tech: [
-      "react",
-      "javascript",
-      "d3",
-      "semantic",
-      "html5",
-      "css3"
-    ]
+    tech: ["react", "javascript", "d3", "semantic", "html5", "css3"]
   },
   {
     id: 4,
     name: "Highlighter Prototype",
     url: "https://adrianapan.github.io/highlighter-prototype/",
-    tech: [
-      "react",
-      "javascript",
-      "bootstrap",
-      "html5",
-      "css3"
-    ]
+    tech: ["react", "javascript", "bootstrap", "html5", "css3"]
   }
 ]
