@@ -1,28 +1,29 @@
-import React from "react"
-import "devicon"
+import React from 'react'
+import 'devicon'
 
 function setDevIcon(name, theme) {
   switch (name) {
-    case "javascript":
-    case "html5":
-    case "css3":
-    case "react":
-    case "nodejs":
-    case "postgresql":
-    case "mongodb":
-    case "python":
-    case "php":
-    case "photoshop":
-    case "bootstrap":
+    case 'javascript':
+    case 'html5':
+    case 'css3':
+    case 'react':
+    case 'nodejs':
+    case 'postgresql':
+    case 'mongodb':
+    case 'python':
+    case 'php':
+    case 'photoshop':
+    case 'bootstrap':
+    case 'typescript':
       return <i className={`devicon-${name}-plain colored`}></i>
-    case "express":
-    case "sass":
-      return theme === "light" ? (
+    case 'express':
+    case 'sass':
+      return theme === 'light' ? (
         <i className={`devicon-${name}-original colored`}></i>
       ) : (
         <i className={`devicon-${name}-original`}></i>
       )
-    case "tensorflow":
+    case 'tensorflow':
       return (
         <img
           src="/images/tensorflow.png"
@@ -30,7 +31,7 @@ function setDevIcon(name, theme) {
           className="custom-tech-icon"
         />
       )
-    case "firebase":
+    case 'firebase':
       return (
         <img
           src="/images/firebase.png"
@@ -38,7 +39,7 @@ function setDevIcon(name, theme) {
           className="custom-tech-icon"
         />
       )
-    case "electron":
+    case 'electron':
       return (
         <img
           src="/images/electron.png"
@@ -46,7 +47,7 @@ function setDevIcon(name, theme) {
           className="custom-tech-icon"
         />
       )
-    case "semantic":
+    case 'semantic':
       return (
         <img
           src="/images/semantic.png"
@@ -54,7 +55,7 @@ function setDevIcon(name, theme) {
           className="custom-tech-icon"
         />
       )
-    case "d3":
+    case 'd3':
       return (
         <img src="/images/d3.png" alt="D3.js" className="custom-tech-icon" />
       )
