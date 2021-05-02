@@ -1,8 +1,8 @@
+### Deprecated in favour of: https://github.com/AdrianApan/personal-site
+
 ## Personal website
 
 Personal portfolio website - built with React, JavaScript, Semantic UI, Node and Express.
-
-![alt text](https://i.imgur.com/O0a5iHV.png)
 
 ## Installation
 
